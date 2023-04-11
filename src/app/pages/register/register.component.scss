@@ -1,0 +1,217 @@
+@import './../../../assets/scss/color.scss';
+
+.brand {
+  padding: 14px 16px;
+  background: $white;
+  width: 100%;
+  position: fixed;
+  img {
+    width: 120px;
+  }
+}
+
+.text-ads {
+  display: inline-block;
+  margin: 40px 16px 28px;
+  text-align: center;
+  color: $white;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.24px;
+}
+
+.bg-illustration,
+.bg-illustration-carousel {
+  background-image: url('./../../../assets/img/bg-illustration.svg');
+  background-repeat: no-repeat;
+  background-color: $primary-600;
+  background-position: right 21% top -60%;
+  width: 100%;
+  padding-top: 70px;
+}
+
+.bg-illustration {
+  text-align: center;
+}
+
+.bg-illustration-carousel {
+  display: none;
+}
+
+.form-register {
+  text-align: initial;
+  margin: 16px;
+  padding: 28px 16px;
+  background: $white;
+  border-radius: 8px;
+}
+
+.title {
+  color: $primary-900;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.sub-title {
+  color: $primary-900;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.label-form {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.input-form {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.password-field {
+  display: block;
+  width: 100%;
+
+}
+::ng-deep.p-password,
+::ng-deep.p-password-input {
+  width: 100% !important;
+}
+
+.label-checkbox {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+::ng-deep.p-checkbox,
+::ng-deep.p-checkbox-box {
+  width: 16px !important;
+  height: 16px !important;
+  border-radius: 0!important;
+}
+
+.link-term-privacy {
+  color: $primary-600;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer {
+  color: $white;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 54px;
+}
+
+@media screen and (min-width:1024px) {
+  .section-register {
+    min-height: 100vh;
+    display: flex;
+  }
+
+  .bg-illustration-carousel {
+    display: initial;
+    background-size: cover;
+    background-position: left 24% center;
+    width: 40%;
+  }
+
+  .bg-illustration-carousel,
+  .register {
+    padding: 14px;
+  }
+
+  .register {
+    width: 60%;
+  }
+  
+  .brand {
+    padding-left: 32px;
+    position: initial;
+    img{
+      width: 200px;
+    }
+  }
+
+  .bg-illustration {
+    background: $white;
+    padding-top: 0;
+  }
+
+  .form-register {
+    padding: 28px 0;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 24px;
+  }
+
+  .label-form {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  
+  .input-form {
+    font-size: 20px;
+  }
+  
+  .sub-title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 60px;
+  }
+
+  .label-checkbox {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  .checkbox-first {
+    margin-top: 48px;
+  }
+  
+  ::ng-deep.p-checkbox,
+  ::ng-deep.p-checkbox-box {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .primary-button {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 48px;
+  }
+
+  .footer {
+    color: $primary-900;
+    text-align: left;
+    margin-left: 32px;
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .bg-illustration-carousel,
+  .register {
+    padding: 32px;
+  }
+
+  .form-register {
+    padding: 28px 16px;
+  }
+}
+
+@media screen and (min-width:1920px) {
+  .footer {
+    padding-top: 90px;
+  }
+}

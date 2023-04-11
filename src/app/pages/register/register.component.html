@@ -1,1 +1,92 @@
-<p>register works!</p>
+<div class="section-register">
+  <div class="bg-illustration-carousel">
+    <div class="carousel">
+      <app-carousel [carouselData]="carousel" [numVisible]="1"></app-carousel>
+    </div>
+  </div>
+  <div class="register proxima">
+    <div class="brand">
+      <img src="./../../../assets/img/logo-axdif.png" alt="logo-axdif">
+    </div>
+    <div class="bg-illustration">
+      <p class="text-ads lg:hidden">A few clicks away from being a part of Axdif</p>
+      <div class="form-register">
+        <p class="title">Manage all your employee efficiently</p>
+        <p class="sub-title">Let’s get you all set up so you can verify your personal account and begin setting up
+          your profile</p>
+
+        <!-- FORM REGISTER -->
+        <div class="formgrid grid">
+          <!-- Firstname -->
+          <div class="field col-12 md:col-6">
+            <label for="firstname" class="label-form">Firstname</label>
+            <input pInputText id="firstname" type="text" placeholder="e.g PT Elabram System" class="w-full input-form">
+          </div>
+
+          <!-- Lastname -->
+          <div class="field col-12 md:col-6">
+            <label for="lastname" class="label-form">Lastname</label>
+            <input pInputText id="lastname" type="text" placeholder="e.g John Doe" class="w-full input-form">
+          </div>
+
+          <!-- Email -->
+          <div class="field col-12 md:col-6">
+            <label for="email" class="label-form">Email</label>
+            <input pInputText id="email" type="text" placeholder="e.g john.doe@mail.com" class="w-full input-form">
+          </div>
+
+          <!-- Phone Number -->
+          <div class="field col-12 md:col-6">
+            <label for="country code" class="label-form">Phone Number</label>
+            <div class="formgrid grid">
+              <div class="field col-5">
+                <input pInputText id="country code" type="text" placeholder="Country Code" class="w-full input-form">
+              </div>
+              <div class="field col-7">
+                <input pInputText id="phone number" type="text" placeholder="e.g 821 2345 6789"
+                  class="w-full input-form">
+              </div>
+            </div>
+          </div>
+
+          <!-- Password -->
+          <div class="field col-12 md:col-6">
+            <label for="password" class="label-form">Password</label>
+            <p-password [toggleMask]="true" id="password" type="text" placeholder="Insert Password"
+              class="password-field"></p-password>
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="field col-12 md:col-6">
+            <label for="confirm password" class="label-form">Confirm Password</label>
+            <p-password [toggleMask]="true" id="confirm password" type="text" placeholder="Confirm Password"
+              class="password-field"></p-password>
+          </div>
+
+          <!-- Checkbox Newsletter-->
+          <div class="field-checkbox checkbox-first col-12">
+            <p-checkbox inputId="achieve-newsletter"></p-checkbox>
+            <label for="achieve-newsletter" class="label-checkbox">Yes I want to receive Axdif’s Newsletter</label>
+          </div>
+
+          <!-- Checkbox Term -->
+          <div class="field-checkbox col-12">
+            <p-checkbox inputId="accept-term"></p-checkbox>
+            <label for="accept-term" class="label-checkbox">I have read and accept the <a
+                class="link-term-privacy">Terms
+                & Conditions</a> and <a class="link-term-privacy">Privacy
+                Policy</a></label>
+          </div>
+
+          <div class="col-12">
+            <button pButton type="button" label="Submit" class="primary-button" (click)="onRegister()"></button>
+          </div>
+
+        </div>
+        </div>
+        <div class="footer">
+          <app-footer></app-footer>
+        </div>
+        </div>
+        </div>
+        </div>
