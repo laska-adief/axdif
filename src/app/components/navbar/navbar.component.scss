@@ -1,0 +1,107 @@
+@import './../../../assets/scss/color.scss';
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.menu-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  img {
+    width: 40px;
+  }
+}
+
+.menu-desktop {
+  display: none;
+  ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    li a {
+      color: $primary-200;
+      font-weight: 700;
+    }
+
+  }
+}
+
+.active-link {
+  color: $primary-900 !important;
+  background: $active-link;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.profile {
+  img {
+    width: 40px;
+  }
+}
+
+.menu-mobile {
+  position: relative;
+}
+
+::ng-deep p-menu div{
+  top: 20px !important;
+  left: -18px !important;
+}
+
+.menu-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+
+  i {
+    margin-left: 5px;
+  }
+}
+
+
+
+@media screen and (min-width:1024px) {
+  nav {
+    padding: 40px;
+  }
+
+  .logo {
+    img {
+      width: 60px;
+    }
+  }
+
+  .menu-desktop {
+    display: initial;
+
+    ul li a{
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  .menu-mobile {
+    display: none;
+  }
+
+  .profile {
+    img {
+      width: 48px;
+    }
+  }
+}

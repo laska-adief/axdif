@@ -1,0 +1,24 @@
+<nav>
+  <div class="menu-left">
+    <div class="logo" [routerLink]="'/dashboard'">
+      <img src="./../../../assets/img/axdif-icon-square-white.svg" alt="axdif-icon-square-white">
+    </div>
+    <div class="menu-desktop">
+      <ul>
+        <li><a [routerLink]="['/dashboard/overview']" routerLinkActive="active-link">Overview</a></li>
+        <li><a [routerLink]="['/dashboard/employee-stat']" routerLinkActive="active-link">Employee Stats</a></li>
+        <li><a routerLinkActive="active-link">Submission</a></li>
+        <li><a routerLinkActive="active-link">Task</a></li>
+        <li><a routerLinkActive="active-link">Chat</a></li>
+        <li><a routerLinkActive="active-link">Payroll</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="menu-mobile">
+    <p-menu #menu [model]="items" [popup]="true"></p-menu>
+    <span class="menu-link" (click)="menu.toggle($event)">{{currentMenu}}<i class="pi pi-angle-down"></i></span>
+  </div>
+  <div class="profile">
+    <img src="./../../../assets/img/Profile Picture.png" alt="profile">
+  </div>
+</nav>
