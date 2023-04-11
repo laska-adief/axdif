@@ -1,0 +1,54 @@
+<p-card class="card-summary">
+  <div class="header">
+    <p class="title">Summary</p>
+    <div class="action">
+      <p class="action-desktop periode-text">Periode</p>
+      <p-button styleClass="p-button-outlined p-button-primary">
+        <span class="action-mobile">{{date|date:'y'}}</span>
+        <span class="action-desktop">
+          <span>{{date|date:'MMMM y'}}</span>
+        </span>
+        <i class="pi pi-calendar"></i>
+      </p-button>
+    </div>
+  </div>
+  <p-divider></p-divider>
+  <div class="container-content grid">
+    <div class="col-6 md:col-4">
+      <p-card>
+        <div class="label">Working Day(s)</div>
+        <div class="content">2 Day(s)</div>
+      </p-card>
+    </div>
+    <div class="col-6 md:col-4">
+      <p-card>
+        <div class="label">Working Hour(s)</div>
+        <div class="content">13 hr 14 min</div>
+      </p-card>
+    </div>
+    <div class="col-6 md:col-4">
+      <p-card>
+        <div class="label">Exc. Attendance</div>
+        <div class="content">0 Day(s)</div>
+      </p-card>
+    </div>
+    <div class="col-6 md:col-4">
+      <p-card>
+        <div class="label">Leave Taken</div>
+        <div class="content">0 Day(s)</div>
+      </p-card>
+    </div>
+    <div class="col-6 md:col-4">
+      <p-card>
+        <div class="label">Overtime</div>
+        <div class="content">00 hr 00 min</div>
+      </p-card>
+    </div>
+    <div class="col-6 md:col-4">
+      <p-card>
+        <div class="label">Claim</div>
+        <div class="content">IDR 0</div>
+      </p-card>
+    </div>
+  </div>
+</p-card>

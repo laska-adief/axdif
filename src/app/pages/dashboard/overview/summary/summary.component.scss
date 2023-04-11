@@ -1,0 +1,87 @@
+@import './../../../../../assets/scss/color.scss';
+
+::ng-deep.p-card .p-card-body {
+  padding: 16px;
+}
+
+::ng-deep.p-card .p-card-content {
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  
+  .title {
+    font-weight: bold;
+  }
+  
+  span {
+    margin-right: 12px;
+    color: $black;
+    font-weight: 500;
+  }
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-desktop {
+  display: none;
+}
+
+.periode-text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 30px;
+}
+
+::ng-deep.p-divider.p-divider-horizontal:before {
+  border-top: 1px $primary-50;
+}
+
+.label {
+  font-size: 12px;
+  color: $gray-label;
+}
+
+.content {
+  font-size: 16px;
+  color: $dark-text;
+  font-weight: bold;
+}
+
+@media screen and (min-width:768px){
+  ::ng-deep.p-card .p-card-body {
+    padding: 32px;
+  }
+
+  .action-mobile {
+    display: none;
+  }
+
+  .action-desktop {
+    display: initial;
+  }
+
+  .header {    
+    .title {
+      font-size: 24px;
+    }
+  }
+
+  .label {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .content {
+    font-size: 24px;
+  }
+}
