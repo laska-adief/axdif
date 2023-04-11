@@ -1,0 +1,27 @@
+<div class="top">
+  <div class="heading">
+    <h2 class="heading-text">Employee Summary</h2>
+    <div class="heading-action">
+      <p class="display-data-text">Display Data in</p>
+      <span class="p-buttonset">
+        <button pButton pRipple label="Monthly" [ngClass]="{'inactive-button' : monthYearButton === 'monthly'}"
+          (click)="onClickMonthly()"></button>
+        <button pButton pRipple label="Yearly" [ngClass]="{'inactive-button' : monthYearButton === 'yearly'}"
+          (click)="onClickYeary()"></button>
+      </span>
+      <p>Periode</p>
+      <p-button styleClass="p-button-outlined p-button-primary">
+        <span class="button-periode">{{date|date:'y'}}</span>
+        <i class="pi pi-calendar"></i>
+      </p-button>
+    </div>
+  </div>
+</div>
+
+<div class="grid grid-overview">
+  <div class="col-12 xl:col-8"><app-attendance-summary></app-attendance-summary></div>
+  <div class="col-12 xl:col-4"><app-attendance-completeness></app-attendance-completeness></div>
+  <div class="col-12 xl:col-4"><app-overall-task-progress></app-overall-task-progress></div>
+  <div class="col-12 xl:col-8"><app-task-completion></app-task-completion></div>
+  <div class="col-12"><app-leave-recap></app-leave-recap></div>
+</div>

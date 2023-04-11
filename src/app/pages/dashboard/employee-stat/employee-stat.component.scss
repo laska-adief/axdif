@@ -1,0 +1,94 @@
+@import './../../../../assets/scss/color.scss';
+
+.top {
+  margin-bottom: 20px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.heading-text {
+  font-size: 16px;
+  color: $inactive-button-text;
+  font-weight: 700;
+}
+
+.heading-action {
+  font-size: 12px;
+  font-weight: 400;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.display-data-text {
+  display: inline-block;
+  width: 40px;
+}
+
+::ng-deep.p-button .p-button-label {
+  font-size: 12px;
+}
+
+::ng-deep.p-button {
+  padding: 0.5rem 1rem;
+}
+
+.button-periode {
+  color: $black;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+::ng-deep.p-button.inactive-button {
+  background: $white;
+  color: $inactive-button-text;
+  border-color: $inactive-button-border;
+  
+}
+::ng-deep.p-button.inactive-button .p-button-label {
+  font-weight: 500;
+}
+
+@media screen and (min-width:1024px){
+  .top {
+    margin-bottom: 40px;
+  }
+
+  .heading {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .heading-text {
+    font-size: 32px;
+  }
+
+  .heading-action {
+    font-size: 16px;
+    column-gap: 12px;
+  }
+
+  .display-data-text {
+    display: initial;
+    width: initial;
+  }
+  
+  ::ng-deep.p-button .p-button-label {
+    font-size: 16px;
+  }
+  
+  ::ng-deep.p-button {
+    padding: 0.75rem 1.25rem;
+  }
+  
+  .button-periode {
+    font-size: 16px;
+  }
+}
