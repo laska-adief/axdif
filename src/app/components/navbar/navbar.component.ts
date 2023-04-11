@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 
 @Component({
@@ -19,9 +20,32 @@ export class NavbarComponent implements OnInit {
   ];
   currentMenu:string = 'Overview'
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    this.setCurrentMenu(this.router.url);
+    this.router.events.subscribe({
+      next: (res) => {
+        if(res instanceof NavigationEnd) {
+          this.setCurrentMenu(res.url);
+        }
+      }
+    })
+  }
+
+  setCurrentMenu(url:string) {
+    switch (url) {
+      case '/dashboard/overview':
+        this.currentMenu = 'Overview';
+        break;
+      case '/dashboard/employee-stat':
+        this.currentMenu = 'Employee Stats';
+        break;
+        
+      default:
+        this.currentMenu = 'Overview';
+        break;
+    }
   }
 
 }
