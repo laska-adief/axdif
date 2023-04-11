@@ -1,0 +1,145 @@
+@import './../../../../../assets/scss/color.scss';
+
+::ng-deep.p-card .p-card-body {
+  padding: 16px;
+}
+
+::ng-deep.p-card .p-card-content {
+  padding: 0;
+}
+.header {
+  font-size: 16px;
+  line-height: 20px;
+  
+  .title {
+    font-weight: bold;
+  }
+}
+
+.container-content {
+  margin-top: 16px;
+}
+
+.content-description {
+  margin-top: 16px;
+}
+
+.each-card {
+  border: 1px solid #C6D4DF;
+  padding: 16px;
+  text-align: center;
+}
+
+.each-card-1 {
+  border-top-left-radius: 12px;
+}
+
+.each-card-2 {
+  border-top-right-radius: 12px;
+}
+
+.each-card-3 {
+  border-bottom-left-radius: 12px;
+}
+
+.each-card-4 {
+  border-bottom-right-radius: 12px;
+}
+
+.each-card-label {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 14px;
+
+  p {
+    color: $label-gray;
+  }
+
+  img {
+    width: 16px;
+  }
+}
+
+.top-content {
+  margin-bottom: 14px;
+
+  .bold-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 6px;
+  }
+
+  .percentage {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 4px;
+  }
+}
+
+.green {
+  color: $green-text;
+  background: $green-bg-trans;
+}
+
+.red {
+  color: $red-text;
+  background: $red-bg-trans;
+}
+
+.bottom-content {
+  font-size: 12px;
+}
+
+@media screen and (min-width:768px){
+  ::ng-deep.p-card .p-card-body {
+    padding: 24px;
+  }
+
+  .header {    
+    .title {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (min-width:1024px){
+  .each-card-1 {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+  
+  .each-card-2 {
+    border-top-right-radius: 0px;
+  }
+  
+  .each-card-3 {
+    border-bottom-left-radius: 0px;
+  }
+  
+  .each-card-4 {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .each-card-label {
+    font-size: 16px;
+  }
+
+  .top-content {
+    margin-bottom: 16px;
+  
+    .bold-text {
+      font-size: 24px;
+    }
+  
+    .percentage {
+      font-size: 16px;
+    }
+  }
+
+  .bottom-content {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,73 @@
+<p-card class="card-pie">
+  <div class="header">
+    <p class="title">Task Completion in All Project</p>
+  </div>
+  <div class="container-content">
+    <p-chart type="line" [data]="data" [options]="options" height="300px"></p-chart>
+    <div class="content-description grid">
+      <div class="each-card each-card-1 col-6 lg:col-3">
+        <div class="each-card-label">
+          <p>Total Task Completed</p>
+          <img src="./../../../../../assets/img/Info.svg" alt="Info">
+        </div>
+        <div class="each-card-content">
+          <div class="top-content">
+            <span class="bold-text">2400</span>
+            <span class="percentage green">20% <img src="./../../../../../assets/img/Icon-Increase.svg"
+                alt="Icon-Increase"></span>
+          </div>
+          <div class="bottom-content">
+            Last Year : 2000 Task
+          </div>
+        </div>
+      </div>
+
+      <div class="each-card each-card-2 col-6 lg:col-3">
+        <div class="each-card-label">
+          <p>Most Completed Tasks At</p>
+          <img src="./../../../../../assets/img/Info.svg" alt="Info">
+        </div>
+        <div class="each-card-content">
+          <div class="top-content">
+            <span class="bold-text">185</span>
+          </div>
+          <div class="bottom-content">
+            May 2022
+          </div>
+        </div>
+      </div>
+
+      <div class="each-card each-card-3 col-6 lg:col-3">
+        <div class="each-card-label">
+          <p>Total Task Created</p>
+          <img src="./../../../../../assets/img/Info.svg" alt="Info">
+        </div>
+        <div class="each-card-content">
+          <div class="top-content">
+            <span class="bold-text">1600</span>
+            <span class="percentage red">20% <img src="./../../../../../assets/img/Icon-Decrease.svg"
+                alt="Icon-Decrease"></span>
+          </div>
+          <div class="bottom-content">
+            Last Year : 1800 Task
+          </div>
+        </div>
+      </div>
+
+      <div class="each-card each-card-4 col-6 lg:col-3">
+        <div class="each-card-label">
+          <p>Most Completed Tasks At</p>
+          <img src="./../../../../../assets/img/Info.svg" alt="Info">
+        </div>
+        <div class="each-card-content">
+          <div class="top-content">
+            <span class="bold-text">UI/UX Design</span>
+          </div>
+          <div class="bottom-content">
+            240 Task
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</p-card>
