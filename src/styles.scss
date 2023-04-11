@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/scss/color.scss';
+
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('./assets/font/ProximaNova.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'proxima-nova', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.proxima {
+  font-family: 'proxima-nova', serif;
+}
+
+.primary-button {
+  width: fit-content;
+  background: $primary-button !important;
+  border: 1px solid $primary-button !important;
+}
