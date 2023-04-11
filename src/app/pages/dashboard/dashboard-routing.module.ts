@@ -10,9 +10,10 @@ const routes: Routes = [
     component: DashboardComponent,
     children:[
       { path:'overview', component:OverviewComponent },
-      { path:'employee-stat', component:EmployeeStatComponent }
+      { path:'employee-stat', component:EmployeeStatComponent },
     ] 
-  }
+  },
+  { path:'**', redirectTo: 'overview' }
 ];
 
 @NgModule({

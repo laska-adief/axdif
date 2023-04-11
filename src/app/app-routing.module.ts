@@ -6,10 +6,12 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { AfterRegisterComponent } from './pages/after-register/after-register.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'register', pathMatch:'full' },
   { path: 'register', component: RegisterComponent },
   { path: 'verify-account', component: AfterRegisterComponent },
   { path: 'login', component: LoginComponent },
   { path: 'dashboard', loadChildren: () => import('./pages/dashboard/dashboard.module').then((m) => m.DashboardModule) },
+  { path:'**', redirectTo:'register' }
 ];
 
 @NgModule({
