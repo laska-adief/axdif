@@ -1,1 +1,83 @@
-<p>login works!</p>
+<div class="section-login proxima">
+  <div class="bg-illustration-carousel">
+    <div class="content">
+      <img src="./../../../assets/img/login-illustration-1.png" alt="">
+      <div class="footer">
+        <app-footer></app-footer>
+      </div>
+    </div>
+  </div>
+  <div class="login">
+    <div class="brand">
+      <img src="./../../../assets/img/logo-axdif.png" alt="logo-axdif">
+    </div>
+    <div class="bg-illustration">
+      <div class="form-login">
+        <p class="title">Login to your Account</p>
+        <p class="sub-title">Hi, welcome back! Select method to login</p>
+
+        <div class="button-container">
+          <div class="button">
+            <p-button styleClass="p-button-outlined p-button-secondary button-login col-12 lg:col-6">
+              <img alt="logo" src="./../../../assets/img/icon-google.svg" style="width: 1.5rem" />
+              <span class="font-bold">Google</span>
+            </p-button>
+          </div>
+          <div class="button">
+            <p-button styleClass="p-button-outlined p-button-secondary button-login col-12 lg:col-6">
+              <img alt="logo" src="./../../../assets/img/icon-linkedin.svg" style="width: 1.5rem" />
+              <span class="font-bold">Linked In</span>
+            </p-button>
+          </div>
+        </div>
+
+        <div class="continue-email">
+          <hr class="line">
+          <span>Or continue with email</span>
+          <hr class="line">
+        </div>
+
+        <!-- FORM REGISTER -->
+        <div class="formgrid grid">
+          <!-- Email -->
+          <div class="field col-12">
+            <label for="email" class="label-form">Email</label>
+            <input pInputText id="email" type="text" placeholder="e.g john.doe@mail.com" class="w-full input-form">
+          </div>
+
+          <!-- Password -->
+          <div class="field col-12">
+            <label for="password" class="label-form">Password</label>
+            <p-password [toggleMask]="true" id="password" type="text" placeholder="Insert Password"
+              class="password-field input-form"></p-password>
+          </div>
+
+          <div class="footer-form">
+            <!-- Checkbox Newsletter-->
+            <div class="field-checkbox">
+              <p-checkbox inputId="achieve-newsletter"></p-checkbox>
+              <label for="achieve-newsletter" class="label-checkbox">Remember me</label>
+            </div>
+
+            <!-- Forgot Password -->
+            <div class="forgot-password-text">
+              <a href="#">Forgot Password</a>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <button pButton type="button" label="Login" class="primary-button" (click)="onLogin()"></button>
+          </div>
+
+          <div class="privacy-term-text">
+            <a href="#">Privacy Policy</a> • <a href="#">Term & Condition</a>
+          </div>
+
+        </div>
+        </div>
+        <div class="footer md:hidden">
+          <app-footer></app-footer>
+        </div>
+        </div>
+        </div>
+        </div>

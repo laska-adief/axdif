@@ -1,0 +1,348 @@
+@import './../../../assets/scss/color.scss';
+
+.brand {
+  padding: 14px 16px;
+  background: $white;
+  width: 100%;
+  position: fixed;
+  img {
+    width: 120px;
+  }
+}
+
+.text-ads {
+  display: inline-block;
+  margin: 40px 16px 28px;
+  text-align: center;
+  color: $white;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.24px;
+}
+
+.bg-illustration-carousel {
+  background-image: url('./../../../assets/img/bg-illustration.svg');
+  background-repeat: no-repeat;
+  background-color: $primary-600;
+  background-position: right 21% top -60%;
+  width: 100%;
+  padding-top: 70px;
+}
+
+.bg-illustration {
+  text-align: center;
+}
+
+.bg-illustration-carousel {
+  display: none;
+}
+
+.form-login {
+  text-align: initial;
+  margin: 16px;
+  background: $white;
+  border-radius: 8px;
+  padding-top: 85px;
+}
+
+.title {
+  color: $primary-900;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.sub-title {
+  color: $primary-900;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.button-container {
+  ::ng-deep.button-login {
+    width: 100%;
+    margin-bottom: 12px;  
+
+    span{
+      width: 100%;
+    }
+  }
+}
+
+.continue-email {
+  text-align: center;
+  margin: 16px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span{
+    font-size: 14px;
+    line-height: 18px;
+    color: $primary-300;
+  }
+
+  .line{
+    height: 1px;
+    width: 26%;
+    background: $primary-300;
+  }
+}
+
+.label-form {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.input-form {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.password-field {
+  display: block;
+  width: 100%;
+
+}
+::ng-deep.p-password,
+::ng-deep.p-password-input {
+  width: 100% !important;
+}
+
+.label-checkbox {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+::ng-deep.p-checkbox,
+::ng-deep.p-checkbox-box {
+  width: 16px !important;
+  height: 16px !important;
+  border-radius: 0!important;
+}
+
+.footer-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+
+  div {
+    padding: 8px;
+  }
+}
+
+::ng-deep.field-checkbox {
+  margin-bottom: 0;
+}
+
+.forgot-password-text a {
+  color: $primary-600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+}
+
+.primary-button {
+  width: 100%;
+}
+
+.privacy-term-text {
+  margin: 0 auto;
+  margin-top: 40px;
+  a {
+    color: $primary-300;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.footer {
+  color: $black;
+  text-align: center;
+  margin-top: 80px;
+}
+
+@media screen and (min-width:640px) {
+  .continue-email {
+    .line{
+      width: 36%;
+    }
+  }
+}
+
+@media screen and (min-width:768px) {
+  .footer {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .section-login {
+    min-height: 100vh;
+    display: flex;
+  }
+
+  .bg-illustration-carousel {
+    display: initial;
+    background-size: cover;
+    background-position: left 24% center;
+    width: 60%;
+    text-align: center;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    img{
+      width: 100%;
+    }
+  }
+
+  .bg-illustration-carousel,
+  .login {
+    padding: 14px;
+  }
+
+  .login {
+    width: 40%;
+  }
+  
+  .brand {
+    position: initial;
+    img{
+      width: 200px;
+    }
+  }
+
+  .bg-illustration {
+    background: $white;
+    padding-top: 0;
+  }
+
+  .form-login {
+    padding: 28px 0;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 24px;
+  }
+
+  .continue-email {
+    span {
+      font-size: 16px;
+    }
+
+    .line{
+      width: 26%;
+    }
+  }
+
+  .label-form {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  
+  .input-form {
+    font-size: 20px;
+  }
+  
+  ::ng-deep.p-password,
+  ::ng-deep.p-password-input {
+    font-size: 20px !important;
+  }
+  
+  .sub-title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 60px;
+  }
+
+  .label-checkbox {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  ::ng-deep.p-checkbox,
+  ::ng-deep.p-checkbox-box {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .forgot-password-text a{
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .primary-button {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 48px;
+  }
+
+  .privacy-term-text {
+    margin-top: 60px;
+    a {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .footer {
+    color: $white;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width:1920px) {
+  .bg-illustration-carousel {
+    width: 70%;
+  }
+
+  .login {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .continue-email {
+    .line{
+      width: 32%;
+    }
+  }
+
+  .button-container{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .button {
+      width: 50%;
+    }
+  }
+
+  .privacy-term-text {
+    margin-top: 120px;
+  }
+
+
+  .footer {
+    padding-top: 70px;
+  }
+}
