@@ -1,0 +1,33 @@
+<div class="section-after-register">
+  <div class="bg-illustration-carousel">
+    <app-carousel [carouselData]="carousel" [numVisible]="1"></app-carousel>
+  </div>
+  <div class="after-register proxima">
+    <div class="brand">
+      <img src="./../../../assets/img/logo-axdif.png" alt="logo-axdif">
+    </div>
+    <div class="bg-illustration">
+      <p class="text-ads lg:hidden">A few clicks away from being a part of Axdif</p>
+      <div class="after-register-content">
+        <ng-container *ngFor="let item of contentCard;let i = index;let itemLast = last">
+          <div class="content-card" [ngClass]="'card'+i">
+            <img src="./../../../assets/img/{{item.image}}" alt="content1" class="content-card-image">
+            <div class="content-card-text">
+              <p class="content-card-title">{{item.title}}</p>
+              <p class="content-card-subtitle">{{item.subtitle}}</p>
+            </div>
+          </div>
+          <div class="container-line" [ngClass]="'line'+i">
+            <div class="line" *ngIf="!itemLast"></div>
+          </div>
+        </ng-container>
+        <div class="button">
+          <button pButton type="button" label="Login To Axdif" class="primary-button" (click)="onLogin()"></button>
+        </div>
+      </div>
+      <div class="footer">
+        <app-footer></app-footer>
+      </div>
+    </div>
+  </div>
+</div>
