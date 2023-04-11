@@ -1,0 +1,59 @@
+.grid-overview {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-areas: 
+  "profile"
+  "summary"
+  "attendance"
+  "task";
+}
+
+.summary {
+  grid-area: summary;
+}
+.profile {
+  grid-area: profile;
+}
+.task {
+  grid-area: task;
+}
+.attendance {
+  grid-area: attendance;
+}
+
+@media screen and (min-width:1024px){
+  .grid-overview {
+    position: relative;
+  }
+  
+  .summary {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  
+  .profile {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  
+  .task {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    position: absolute;
+    left: 0;
+    top: 540px;
+  }
+  
+  .attendance {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  
+}
+
+@media screen and (min-width:1280px){
+  .task {
+    top: 450px;
+  }
+  
+}
