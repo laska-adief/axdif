@@ -1,0 +1,116 @@
+@import './../../../assets/scss/color.scss';
+
+.section-carousel {
+  text-align: center;
+}
+
+::ng-deep.custom-carousel {
+  margin-top: 60px;
+}
+
+.text-ads {
+  font-size: 44px;
+  line-height: 53px;
+  font-weight: 700;
+  letter-spacing: 0.33px;
+  color: #fff;
+  display: inline-block;
+  padding: 0 38px;
+}
+
+.carousel-item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.carousel-image {
+  margin-bottom: 48px;
+
+  img{
+    width: 100%;
+  }
+}
+
+
+.title {
+  font-size: 28px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 0.21px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.62px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.text-carousel {
+  margin-bottom: 14px;
+}
+
+::ng-deep.p-carousel .p-carousel-indicators button {
+  width: 16px !important;
+  height: 16px !important;
+  border-radius: 100% !important;
+}
+
+::ng-deep.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+  background: $primary-900 !important;
+  width: 50px !important;
+  border-radius: 12px !important;
+}
+
+@media screen and (min-width:768px) {
+  .text-ads {
+    padding: 0px;
+  }
+
+  .text-carousel {
+    margin-bottom: 160px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .text-carousel {
+    margin-bottom: 132px;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .text-carousel {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width:1536px) {
+  .text-carousel {
+    margin-bottom: 110px;
+  }
+}
+
+@media screen and (min-width:1920px) {
+  .text-ads {
+    padding: 0 120px;
+  }
+
+  .text-carousel {
+    margin-bottom: 140px;
+  }
+  .text-carousel {
+    margin-bottom: 140px;
+  }
+
+  .subtitle {
+    display: inline-block;
+    padding: 10px 80px;
+  }
+
+}

@@ -1,0 +1,19 @@
+<div class="section-carousel">
+  <p-carousel [value]="carouselData" styleClass="custom-carousel" [numVisible]="numVisible" [numScroll]="1"
+    [showNavigators]="false" [circular]="true" [autoplayInterval]="3000">
+    <ng-template pTemplate="header">
+      <p class="text-ads">A few clicks away from being a part of Axdif</p>
+    </ng-template>
+    <ng-template let-carousel pTemplate="item">
+      <div class="carousel-item-content">
+        <div class="carousel-image">
+          <img src="../../../assets/img/{{carousel.image}}" [alt]="carousel.title" />
+        </div>
+        <div class="text-carousel">
+          <h4 class="title">{{carousel.title}}</h4>
+          <h6 class="subtitle">{{carousel.subtitle}}</h6>
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>
+</div>
