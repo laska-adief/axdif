@@ -1,0 +1,14 @@
+@import './../../../assets/scss/color.scss';
+
+.container {
+  background: $gray;
+  min-height: calc(100vh - 75.2px);
+  padding: 16px;
+}
+
+@media screen and (min-width:1024px) {
+  .container {
+    min-height: calc(100vh - 143.2px);
+    padding: 40px;
+  }
+}
