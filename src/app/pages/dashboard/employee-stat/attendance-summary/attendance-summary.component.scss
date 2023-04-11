@@ -1,0 +1,108 @@
+@import './../../../../../assets/scss/color.scss';
+
+
+::ng-deep.working .p-card .p-card-body{
+  padding: 12px;
+}
+
+::ng-deep.p-card .p-card-content {
+  padding: 0;
+}
+
+::ng-deep canvas {
+  width: 100% !important;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  
+  .title {
+    font-weight: bold;
+  }
+}
+
+.container-content {
+  margin-top: 16px;
+}
+
+.cards {
+  margin-top: 12px;
+}
+
+.working {
+  position: relative;
+}
+
+.working::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  height: 100%;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.blue-line.working::before {
+  background: $primary-600;
+}
+.red-line.working::before {
+  background: $red-bg;
+}
+
+.label {
+  font-size: 12px;
+  color: $gray-label;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label img {
+  cursor: pointer;
+  width: 16px;
+}
+
+.content {
+  font-size: 16px;
+  color: $dark-text;
+  font-weight: bold;
+}
+
+@media screen and (max-width:391px){
+  ::ng-deep.working .p-card .p-card-body{
+    // padding: 12px !important;
+    height: 78px;
+  }
+}
+
+@media screen and (min-width:768px){
+  ::ng-deep.p-card .p-card-body {
+    padding: 24px;
+  }
+
+  .header {    
+    .title {
+      font-size: 24px;
+    }
+  }
+
+  .label {
+    font-size: 16px;
+    margin-bottom: 12px;
+
+    justify-content: start;
+  }
+  
+  .content {
+    font-size: 24px;
+  }
+
+}
