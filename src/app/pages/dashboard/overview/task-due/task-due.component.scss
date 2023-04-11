@@ -1,0 +1,159 @@
+@import './../../../../../assets/scss/color.scss';
+
+::ng-deep.p-card .p-card-body {
+  padding: 16px;
+}
+
+::ng-deep.p-card .p-card-content {
+  padding: 0;
+}
+
+::ng-deep.p-divider.p-divider-horizontal:before {
+  border-top: 1px $primary-50;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  
+  .title {
+    font-weight: bold;
+  }
+  
+  span {
+    margin-right: 12px;
+    font-weight: 500;
+  }
+}
+
+.label {
+  font-size: 12px;
+  color: $gray-label;
+  margin-bottom: 4px;
+}
+
+.content {
+  font-size: 16px;
+  color: $dark-text;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+::ng-deep.content-card-task .p-component, .p-component {
+  width: 100%;
+}
+
+.content-action {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+
+.left-action {
+  font-size: 10px;
+}
+
+.left-action,
+.right-action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.left-action span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+::ng-deep.badge-green {
+  font-size: 10px;
+  font-weight: 400;
+  color: $green-bg;
+  background: $green-badge;
+}
+
+.date {
+  font-size: 10px;
+  line-height: 16px;
+  color: $gray-label;
+}
+
+.diplay-on-desktop {
+  display: none;
+}
+
+::ng-deep.p-divider.p-divider-vertical {
+  margin: 0 !important;
+}
+
+@media screen and (min-width:768px){
+  ::ng-deep.p-card .p-card-body {
+    padding: 32px;
+  }
+
+  .header {    
+    .title {
+      font-size: 24px;
+    }
+  }
+
+  ::ng-deep.content-card-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .label {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .content {
+    font-size: 24px;
+  }
+
+  .content-action {
+    gap: 16px;
+  }
+  
+  .left-action,
+  .right-action {
+    gap: 16px;
+  }
+  
+  .left-action span {
+    gap: 6px;
+  }
+
+  .left-action p {
+    font-size: 18px;
+  }
+
+  ::ng-deep.badge-green {
+    font-size: 16px;
+  }
+  
+  .date {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .diplay-on-desktop {
+    display: initial;
+  }
+
+}
+
+@media screen and (min-width:1024px) {
+  ::ng-deep.content-card-task .p-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}    

@@ -1,0 +1,38 @@
+<p-card class="card-task-due">
+  <div class="header">
+    <p class="title">Task Due Soon</p>
+    <div class="action">
+      <p-button styleClass="p-button-text p-button-primary">
+        <span>See All</span>
+        <i class="pi pi-angle-right"></i>
+      </p-button>
+    </div>
+  </div>
+  <p-divider></p-divider>
+  <div class="container-content grid">
+    <div class="col-12" *ngFor="let task of tasks">
+      <p-card class="content-card-task">
+        <div class="content-label">
+          <div class="label">{{task.label}}</div>
+          <div class="content">{{task.description}}</div>
+        </div>
+        <div class="content-action">
+          <div class="left-action">
+            <span><i class="pi pi-paperclip"></i>
+              <p>44</p>
+            </span>
+            <span><i class="pi pi-comment"></i>
+              <p>1</p>
+            </span>
+          </div>
+          <p-divider layout="vertical" class="diplay-on-desktop"></p-divider>
+          <div class="right-action">
+            <p-badge [value]="'Medium'" styleClass="badge badge-green"></p-badge>
+            <i class="pi pi-calendar diplay-on-desktop"></i>
+            <p class="date">06 Aug 2021</p>
+          </div>
+        </div>
+      </p-card>
+    </div>
+  </div>
+</p-card>
