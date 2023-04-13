@@ -20,6 +20,10 @@ nav {
   }
 }
 
+.diplay-on-desktop {
+  display: none;
+}
+
 .menu-desktop {
   display: none;
   ul{
@@ -84,6 +88,10 @@ nav {
     img {
       width: 60px;
     }
+  }
+
+  .diplay-on-desktop {
+    display: initial;
   }
 
   .menu-desktop {

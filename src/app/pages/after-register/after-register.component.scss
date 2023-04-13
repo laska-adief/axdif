@@ -206,12 +206,12 @@
 
   .card1 {
     top: 200%;
-    left: 22%;
+    left: 16%;
   }
 
   .card2 {
     top: 336%;
-    left: 30%;
+    left: 36%;
   }
 
   .container-line {
@@ -257,5 +257,22 @@
   .after-register {
     padding-left: 100px;
     padding-right: 100px;
+  }
+
+  .card1 {
+    top: 200%;
+    left: 14%;
+  }
+}
+
+@media screen and (min-width:2560px) {
+  .card1 {
+    top: 200%;
+    left: 12%;
+  }
+
+  .card2 {
+    top: 336%;
+    left: 34%;
   }
 }

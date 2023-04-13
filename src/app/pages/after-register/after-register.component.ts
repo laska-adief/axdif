@@ -4,10 +4,9 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-after-register',
   templateUrl: './after-register.component.html',
-  styleUrls: ['./after-register.component.scss']
+  styleUrls: ['./after-register.component.scss'],
 })
 export class AfterRegisterComponent implements OnInit {
-
   carousel: { image: string; title: string; subtitle: string }[] = [
     {
       image: 'carousel-Illustration-1.svg',
@@ -28,36 +27,31 @@ export class AfterRegisterComponent implements OnInit {
         'Simplify the administrative affairs of the company where you work wherever and whenever. Let’s get started with all these conveniences',
     },
   ];
-  
-  contentCard:{ image: string; title: string; subtitle: string }[] = [
+
+  contentCard: { image: string; title: string; subtitle: string }[] = [
     {
       image: 'login-img-1.svg',
       title: 'Verify your account',
-      subtitle:
-        'A verification link has been sent to your email account.',
+      subtitle: 'A verification link has been sent to your email account.',
     },
     {
       image: 'login-img-2.svg',
+      title: 'Login to your account',
+      subtitle: 'Login your WMS account',
+    },
+    {
+      image: 'login-img-3.svg',
       title: 'Setup your data',
       subtitle:
         'Input your employee data and get the ease of managing employees',
     },
-    {
-      image: 'login-img-3.svg',
-      title: 'Login to your account',
-      subtitle:
-        'Login your WMS account',
-    },
-    
-  ]
+  ];
 
-  constructor(private router:Router) { }
+  constructor(private router: Router) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   onLogin() {
-    this.router.navigate(['/login'])
+    this.router.navigate(['/login']);
   }
-
 }
