@@ -58,16 +58,18 @@
 }
 
 @media screen and (min-width:768px){
-  ::ng-deep.p-card .p-card-body {
-    padding: 32px;
-  }
-
   .action-mobile {
     display: none;
   }
 
   .action-desktop {
     display: initial;
+  }
+}
+
+@media screen and (min-width:1920px){
+  ::ng-deep.p-card .p-card-body {
+    padding: 32px;
   }
 
   .header {    

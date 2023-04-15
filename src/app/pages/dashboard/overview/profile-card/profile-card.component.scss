@@ -85,6 +85,7 @@
     font-size: 12px;
     line-height: 16px;
     color: $black;
+    font-weight: 600;
   }
 }
 
@@ -92,7 +93,7 @@
   margin-bottom: 0;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1920px) {
   ::ng-deep.p-card .p-card-body {
     padding: 32px;
   }
