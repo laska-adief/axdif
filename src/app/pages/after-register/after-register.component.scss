@@ -96,7 +96,6 @@
 .footer {
   color: $white;
   text-align: center;
-  padding-top: 60px;
   padding-bottom: 54px;
 }
 
@@ -116,6 +115,9 @@
   .bg-illustration-carousel,
   .after-register {
     padding: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .after-register {
@@ -123,11 +125,8 @@
   }
   
   .brand {
-    padding-left: 32px;
+    padding-left: 24px;
     position: initial;
-    img{
-      width: 200px;
-    }
   }
 
   .bg-illustration {
@@ -144,48 +143,85 @@
     flex-direction: column;
     justify-content: start;
   }
-  
-  .content-card {
-  
-    img {
-      width: 120px;
-      height: 120px;
-    }
-  
-    &-title {
-      font-size: 28px;
-      line-height: 40px;
-    }
-  
-    &-subtitle {
-      font-size: 22px;
-      line-height: 30px;
-    }
-  }
-
-  .primary-button {
-    font-size: 24px;
-    line-height: 28px;
-    margin-top: 48px;
-  }
 
   .footer {
     color: $primary-900;
     text-align: left;
     margin-left: 32px;
-    padding-top: 40px;
+    // padding-top: 40px;
     padding-bottom: 0;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .bg-illustration-carousel,
-  .after-register {
-    padding: 32px;
+@media screen and (min-width:1280px) {
+  .after-register-content {
+    position: relative;
+    padding: 26px 20px;
+    margin-bottom: 420px;
+  }
+
+  .content-card {
+    margin: 0;
+    flex-direction: row;
+    position: absolute;
+    text-align: left;
+
+    img{
+      margin-right: 20px;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .card1 {
+    top: 300%;
+    left: 10%;
+  }
+
+  .card2 {
+    top: 540%;
+    left: 36%;
+  }
+
+  .container-line {
+    position: absolute;
+    width: initial;
+    margin: initial;
+  }
+
+  .line0 {
+    top: 220%;
+    left: 12%;
+  }
+
+  .line1 {
+    top: 470%;
+    left: 26%;
+  }
+  
+  .line {
+    width: 80px;
+    height: 80px;
+    border: 3px dashed $line;
+    border-top: 0px;
+    border-right: 0px;
+  }
+
+  .button {
+    position: absolute;
+    top: 740%;
+    width: 100%;
   }
 }
 
 @media screen and (min-width:1920px) {
+
+  .brand {
+    padding-left: 32px;
+    img{
+      width: 200px;
+    }
+  }
 
   .after-register-content {
     position: relative;
@@ -201,6 +237,18 @@
 
     img{
       margin-right: 20px;
+      width: 120px;
+      height: 120px;
+    }
+
+    &-title {
+      font-size: 28px;
+      line-height: 40px;
+    }
+  
+    &-subtitle {
+      font-size: 22px;
+      line-height: 30px;
     }
   }
 
