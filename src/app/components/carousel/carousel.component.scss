@@ -9,8 +9,6 @@
 }
 
 .text-ads {
-  font-size: 44px;
-  line-height: 53px;
   font-weight: 700;
   letter-spacing: 0.33px;
   color: #fff;
@@ -23,21 +21,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 40px;
 }
-
-.carousel-image {
-  margin-bottom: 48px;
-
-  img{
-    width: 100%;
-  }
-}
-
 
 .title {
-  font-size: 28px;
-  line-height: 30px;
   font-weight: 700;
   letter-spacing: 0.21px;
   color: #fff;
@@ -45,8 +32,6 @@
 }
 
 .subtitle {
-  font-size: 20px;
-  line-height: 24px;
   letter-spacing: 0.62px;
   font-weight: 400;
   color: #fff;
@@ -54,18 +39,6 @@
 
 .text-carousel {
   margin-bottom: 14px;
-}
-
-::ng-deep.p-carousel .p-carousel-indicators button {
-  width: 16px !important;
-  height: 16px !important;
-  border-radius: 100% !important;
-}
-
-::ng-deep.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
-  background: $primary-900 !important;
-  width: 50px !important;
-  border-radius: 12px !important;
 }
 
 @media screen and (min-width:768px) {
@@ -85,8 +58,42 @@
 }
 
 @media screen and (min-width:1280px) {
+  .text-ads {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .carousel-image { 
+    margin-bottom: 30px; 
+    img{
+      width: 60%;
+    }
+  }
+
   .text-carousel {
     margin-bottom: 40px;
+  }
+
+  .title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  ::ng-deep.p-carousel .p-carousel-indicators button {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 100% !important;
+  }
+  
+  ::ng-deep.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+    background: $primary-900 !important;
+    width: 30px !important;
+    border-radius: 12px !important;
   }
 }
 
@@ -98,19 +105,46 @@
 
 @media screen and (min-width:1920px) {
   .text-ads {
+    font-size: 44px;
+    line-height: 53px;
     padding: 0 120px;
   }
 
   .text-carousel {
     margin-bottom: 140px;
   }
+
   .text-carousel {
     margin-bottom: 140px;
   }
 
+  .carousel-image {
+    margin-bottom: 48px;
+  
+    img{
+      width: 100%;
+    }
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
   .subtitle {
+    font-size: 20px;
+    line-height: 24px;
     display: inline-block;
     padding: 10px 80px;
+  }
+
+  ::ng-deep.p-carousel .p-carousel-indicators button {
+    width: 16px !important;
+    height: 16px !important;
+  }
+  
+  ::ng-deep.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+    width: 50px !important;
   }
 
 }

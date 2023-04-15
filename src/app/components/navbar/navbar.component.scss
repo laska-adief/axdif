@@ -80,6 +80,20 @@ nav {
 
 
 @media screen and (min-width:1024px) {
+  .diplay-on-desktop {
+    display: initial;
+  }
+
+  .menu-desktop {
+    display: initial;
+  }
+
+  .menu-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1920px) {
   nav {
     padding: 40px;
   }
@@ -90,21 +104,13 @@ nav {
     }
   }
 
-  .diplay-on-desktop {
-    display: initial;
-  }
-
   .menu-desktop {
-    display: initial;
-
-    ul li a{
+    ul {
+      li a{
       font-size: 24px;
       line-height: 30px;
+      }
     }
-  }
-
-  .menu-mobile {
-    display: none;
   }
 
   .profile {
