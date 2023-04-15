@@ -25,10 +25,17 @@
     padding: 24px;
   }
 
+}
+
+@media screen and (min-width:1920px){
   .header {    
     .title {
       font-size: 24px;
     }
+  }
+
+  ::ng-deep p-chart.completeness-chart > div {
+    height: 418px !important;
   }
 
 }

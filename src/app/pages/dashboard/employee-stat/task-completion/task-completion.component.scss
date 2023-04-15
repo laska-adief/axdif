@@ -96,12 +96,6 @@
   ::ng-deep.p-card .p-card-body {
     padding: 24px;
   }
-
-  .header {    
-    .title {
-      font-size: 24px;
-    }
-  }
 }
 
 @media screen and (min-width:1024px){
@@ -121,6 +115,19 @@
   .each-card-4 {
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
+  }
+
+  .top-content {
+    margin-bottom: 16px;
+  }
+}
+
+
+@media screen and (min-width:1920px){
+  .header {    
+    .title {
+      font-size: 24px;
+    }
   }
 
   .each-card-label {

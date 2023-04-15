@@ -33,11 +33,20 @@
   padding: 4px;
 }
 
+::ng-deep p-table.leave-recap-table {
+  thead,
+  tbody {
+    font-size: 14px !important;
+  }
+}
+
 @media screen and (min-width:768px){
   ::ng-deep.p-card .p-card-body {
     padding: 24px;
   }
+}
 
+@media screen and (min-width:1920px){
   .header {    
     .title {
       font-size: 24px;
@@ -46,5 +55,12 @@
 
   .container-content {
     margin-top: 30px;
+  }
+
+  ::ng-deep p-table.leave-recap-table {
+    thead,
+    tbody {
+      font-size: 18px !important;
+    }
   }
 }

@@ -3,10 +3,10 @@
     <p class="title">Leave Recap</p>
   </div>
   <div class="container-content">
-    <p-table [value]="data" sortMode="multiple" [scrollable]="true">
+    <p-table [value]="data" sortMode="multiple" [scrollable]="true" class="leave-recap-table">
       <ng-template pTemplate="header">
         <tr>
-          <th pSortableColumn="code" style="min-width:200px" pFrozenColumn>Leave Code <p-sortIcon field="code"></p-sortIcon></th>
+          <th pSortableColumn="code" style="min-width:200px">Leave Code <p-sortIcon field="code"></p-sortIcon></th>
           <th pSortableColumn="requestedDate" style="min-width:200px">Requested On <p-sortIcon field="name"></p-sortIcon></th>
           <th pSortableColumn="type" style="min-width:200px">Leave Type <p-sortIcon field="category"></p-sortIcon></th>
           <th pSortableColumn="startDate" style="min-width:200px">Start Date <p-sortIcon field="quantity"></p-sortIcon></th>
@@ -20,7 +20,7 @@
       </ng-template>
       <ng-template pTemplate="body" let-product>
         <tr>
-          <td pFrozenColumn>{{product.code}}</td>
+          <td>{{product.code}}</td>
           <td>{{product.requestDate | date:'E, d MMM y'}}</td>
           <td>{{product.type}}</td>
           <td>{{product.startDate | date:'E, d MMM y'}}</td>

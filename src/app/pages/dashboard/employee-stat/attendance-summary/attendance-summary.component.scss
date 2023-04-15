@@ -88,6 +88,14 @@
     padding: 24px;
   }
 
+  .label {
+    margin-bottom: 8px;
+    justify-content: start;
+  }
+
+}
+
+@media screen and (min-width:1920px){
   .header {    
     .title {
       font-size: 24px;
@@ -97,12 +105,9 @@
   .label {
     font-size: 16px;
     margin-bottom: 12px;
-
-    justify-content: start;
   }
   
   .content {
     font-size: 24px;
   }
-
 }

@@ -24,11 +24,17 @@
   ::ng-deep.p-card .p-card-body {
     padding: 24px;
   }
+}
 
+@media screen and (min-width:1920px){
   .header {    
     .title {
       font-size: 24px;
     }
+  }
+
+  ::ng-deep p-chart.overall-task-chart > div {
+    height: 446px !important;
   }
 
 }
